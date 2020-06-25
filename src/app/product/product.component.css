@@ -1,0 +1,48 @@
+
+  /* Blocks */
+  .site-section-cover {
+    position: relative; }
+    .site-section-cover, .site-section-cover .container {
+      position: relative;
+      z-index: 2; }
+    .site-section-cover, .site-section-cover .container > .row {
+      height: 100vh;
+      min-height: 700px; }
+      @media (max-width: 991.98px) {
+        .site-section-cover, .site-section-cover .container > .row {
+          height: 70vh;
+          min-height: 400px; } }
+    .site-section-cover.overlay {
+      position: relative; }
+      .site-section-cover.overlay:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(52, 58, 64, 0.3);
+        z-index: 1; }
+    .site-section-cover.inner-page, .site-section-cover.inner-page .container > .row {
+      height: auto;
+      min-height: auto;
+      padding: 2em 0; }
+    .site-section-cover.img-bg-section {
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .site-section-cover h1 {
+      font-size: 4.5rem;
+      color: #fff;
+      line-height: 1; }
+      @media (max-width: 991.98px) {
+        .site-section-cover h1 {
+          font-size: 2rem; } }
+    .site-section-cover p {
+      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0.8); }
+  
+  .site-section {
+    padding: 7rem 0; }
+    @media (max-width: 991.98px) {
+      .site-section {
+        padding: 3rem 0; } }

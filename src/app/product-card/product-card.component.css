@@ -1,0 +1,19 @@
+.property-card-brief {
+  text-align: center;
+  padding-top: 10px;
+  color: #001D38;
+}
+
+
+.tag {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: #FDAE5C;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  z-index: 1;
+}

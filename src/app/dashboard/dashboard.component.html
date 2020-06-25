@@ -1,0 +1,27 @@
+<div *ngIf="auth.isAuthenticated()">
+    <div class="container">
+        <table class="table table-striped table-hover" *ngIf="products != null">
+            <thead>
+                <tr>
+                    <!-- <th scope="col">Date</th> -->
+                    <!-- <th scope="col">Title</th> -->
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products; index as i">
+                    <!-- <th>{{product.name}}</th> -->
+                    <td>{{ product.name}}</td>
+                    <td>{{ product.price | currency}}</td>
+                    <td>{{ product.productStatus }}</td>
+                    <td><a routerLink="/editProduct/{{product.id}}"><i class="fa fa-edit"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div fxLayoutAlign="center center">
+            <button mat-raised-button class="btn btn-dark" (click)="add()">NEW</button>
+        </div>
+    </div>
+</div>
