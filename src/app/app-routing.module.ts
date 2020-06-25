@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductComponent } from './product/product.component';
+import { CallbackComponent } from './callback/callback.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'home', component: HomeComponent },
   { path: 'product/:id', component: ProductComponent },
+  { path: 'callback', component: CallbackComponent },
 ];
 
 @NgModule({

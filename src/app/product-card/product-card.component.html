@@ -1,5 +1,5 @@
 <div class="card product-single">
-    <div class="embed-responsive embed-responsive-4by3" *ngIf="product.coverImage">
+    <div *ngIf="product.coverImage">
         <div class="tag" *ngIf="product.productStatus != ''" >
             {{product.productStatus}}
         </div>        
