@@ -3,48 +3,19 @@
         <div class="tag" *ngIf="product.productStatus != ''" >
             {{product.productStatus}}
         </div>        
-        <!-- <div class="product_price">
-            {{product.price | currency}}
-        </div>            -->
         <a routerLink="/product/{{product.id}}">
             <img class="card-img-top embed-responsive-item" src="{{product.coverImage.mediumLink}}" alt="">
         </a>
     </div>
     <div class="card-body">
-        <div>
-            <!-- <h3><a routerLink="/product/{{product.id}}">{{product.address}}</a></h3> -->
-            <!-- <div class="container">
-                <div class="row justify-content-between">
-                    <div class="mark_pro">
-                        <img src="assets/location.svg" alt="">
-                        <span> {{product.neighborhood}}</span>
-                    </div>
-                    <div class="mark_pro">
-                        <span>{{product.productType | translate}}</span>
-                    </div>
-                </div>
-            </div> -->
-            <div class="product-card-brief pb-0">
-                <h4>{{product.name}}</h4>
-            </div>
+        <div class="product-card-brief pb-0">
+            <h4>{{product.name}}</h4>
         </div>
     </div>
     <div class="footer-card card-footer">
         <div class="container">
             <div fxLayout="row" fxLayoutAlign="space-between center">
                 <h6>{{product.price | currency}}</h6>
-                <!-- <div class="mark_pro">
-                    <i class="fa fa-cube pr-1"></i> 
-                    <span>{{product.area}}</span>
-                </div>
-                <div class="mark_pro">
-                    <i class="fa fa-bed pr-1"></i>
-                    <span>{{product.numberOfRooms}}</span>
-                </div>
-                <div class="mark_pro">
-                    <i class="fa fa-bath pr-1"></i>
-                    <span>{{product.numberOfWashrooms}}</span>
-                </div>                 -->
             </div>
         </div> 
     </div>
